@@ -12,7 +12,10 @@ const UserControllers = require('../Controllers/UserControllers');
 
 router.post('/create',UserControllers.UserCreate);
 router.get('/getuser',UserControllers.getUsers);
-router.delete('/delete/:id',UserControllers.deleteUser);
+router.get('/getuser/:_id',UserControllers.getUserByID);
+router.delete('/deleteuser/:_id',UserControllers.deleteUserById);
+router.put('/update/:_id',UserControllers.updateById);
+// router.delete('/delete/:id',UserControllers.deleteUser);
 // router.get();
 // router.put();
 // router.delete();
